@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesment Day3 No.1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(7, 7, 32);
+            color: white;
+        }
+        #section1 {
+            position: relative;
+            top: 100px;
+            left: 5%;
+            height: 100%;
+            width: 50%;
+            z-index: 1;
+        }
+
+        #section1 > .section-a {
+            position: relative;
+            height: 80px;
+        }
+         #section1 > .section-a > .white-logo {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            position: absolute;
+            top: 10px;
+        }
+        #section1 > .section-a > .r-logo {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 18px;
+            top: 30px;
+        }
+
+        #section1 > .section-b {
+            position: relative;
+            margin-top: 30%;
+        }
+        
+        #section1 > .section-c {
+            position: relative;
+            margin-top: 30%;
+        }
+        #section1 > .section-c > .user {
+            width: 50%;
+        }
+
+        #section1 > .section-c > .time {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            width: 50%;
+            
+        }
+        #section2 {
+            position: relative;
+            bottom: 1000px;
+            left: 50%;
+            width: 40%;
+            height: 1000px;
+            z-index: 1;
+        }
+
+        #section2 > .white-box {
+            position: absolute;
+            border: 50px solid white;
+            height: 100%;
+            width: 100%;
+        }
+
+        #section2 > .box1 {
+            position: absolute;
+            border: 50px solid red;
+            top:  15%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 50%;
+        }
+
+        #section2 > .box1 > .box1a {
+            position: absolute;
+            border: 50px solid white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50%;
+        }
+
+        #section2 > .box2 {
+            position: absolute;
+            border: 50px solid blue;
+            top: 70%;
+            left: 25%;
+            width: 20%;
+            height: 20%;
+        }
+
+        #section2 > .box3 {
+            position: absolute;
+            border: 50px solid white;
+            border-radius: 50%;
+            top: 70%;
+            left: 55%;
+            width: 20%;
+            height: 20%;
+        }
+
+        #section3 {
+            position: relative;
+            bottom: 2200px;
+            height: 100vh;
+            width: 100%;
+            z-index: 0;
+        }
+
+        #section3 > .rectangle1 {
+            position: absolute;
+            left: 66%;
+            bottom: 49%;
+            border: 200px solid #48596D;
+            width: 50%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        #section3 > .rectangle2 {
+            position: absolute;
+            left: 34%;
+            top: 500px;
+            border: 200px solid #2D2F48;
+            width: 40%;
+            height: 100%;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- section 1 -->
+    <section id="section1">
+        <div class="section-a">
+            <div class="white-logo"></div>
+            <img class=r-logo src="assets/R-logo.svg" alt="R-logo">
+            <img style="padding-left:15%;" src="assets/WarmUps.png" alt="WarmUps">
+        </div>
+        <div class="section-b">
+            <img src="assets/Nome do arquivo.png" alt="text">
+        </div>
+        <div class="section-c">
+            <div class="user">
+                <img style="padding-right: 20px;" src="assets/u_users-alt.svg" alt="user">
+                <img src="assets/10 mAx..png" alt="10-max">
+            </div>
+            <div class="time">
+                <img  style="padding-right: 20px;" src="assets/u_clock.svg" alt="time">
+                <img src="assets/20min.png" alt="20-min">
+            </div>
+        </div>
+    </section>
+    <!-- section 2 -->
+    <section id="section2">
+        <div class="white-box"></div>
+            <div class="box1">
+                <div class="box1a"></div>
+            </div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+    </section>
+    <!-- section 3 -->
+    <section id="section3">
+            <div class="rectangle1"></div>
+            <div class="rectangle2"></div>
+    </section>
+</body>
+</html>
